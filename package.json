@@ -1,0 +1,29 @@
+{
+  "name": "3-assignment",
+  "version": "1.0.0",
+  "description": "Day 3 - Sales Tax Problem ----------------------------------------------- Subject: node NodeJS_Training_Day_3_Sales_Tax_Problem.js ----------------------------------------------- Hey Guys,",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shreya4390/node-3-assignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shreya4390/node-3-assignment/issues"
+  },
+  "homepage": "https://github.com/Shreya4390/node-3-assignment#readme",
+  "dependencies": {
+    "@babel/cli": "^7.17.3",
+    "@babel/core": "^7.17.5",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0"
+  }
+}
