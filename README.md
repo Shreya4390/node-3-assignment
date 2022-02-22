@@ -57,3 +57,83 @@ Sales Taxes: 6.70
 Total: 74.68
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 -----------------------------------------------
+
+
+{
+    "items":[
+        {
+            "item_name":"book",
+            "category":"study_material",
+            "imported":0,
+            "price":12.49,
+            "quantity":1
+        },
+        {
+            "item_name":"CD",
+            "category":"device",
+            "imported":0,
+            "price":14.99,
+            "quantity":1
+        },
+        {
+            "item_name":"Choclate",
+            "category":"food",
+            "imported":0,
+            "price":0.85,
+            "quantity":1
+        }
+    ]
+}
+
+{
+    "items":[
+        {
+            "item_name":"imported box of chocolates",
+            "category":"food",
+            "imported":1,
+            "price":10.00,
+            "quantity":1
+        },
+        {
+            "item_name":"imported bottle of perfume",
+            "category":"perfume",
+            "imported":1,
+            "price":47.50,
+            "quantity":1
+        }
+    ]
+}
+
+
+{
+    "items":[
+        {
+            "item_name":"imported bottle of perfume",
+            "category":"perfume",
+            "imported":1,
+            "price":27.99,
+            "quantity":1
+        },
+        {
+            "item_name":"bottle of perfume",
+            "category":"perfume",
+            "imported":0,
+            "price":18.99,
+            "quantity":1
+        },
+        {
+            "item_name":"packet of headache pills",
+            "category":"medical_product",
+            "imported":0,
+            "price":9.75,
+            "quantity":1
+        },
+        {
+            "item_name":"box of imported chocolates",
+            "category":"food",
+            "imported":1,
+            "price":11.25,
+            "quantity":1
+        }
+    ]
+}
