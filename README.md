@@ -76,7 +76,7 @@ Total: 74.68
             "quantity":1
         },
         {
-            "item_name":"Choclate",
+            "item_name":"Chocolate",
             "category":"food",
             "imported":0,
             "price":0.85,
