@@ -7,6 +7,7 @@ const app = express();
 
 
 // configure the app to use bodyParser()
+//Math.round(num / 0.05) * 0.05;
 app.use(bodyParser.urlencoded({
     extended: true
 }));
@@ -14,7 +15,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 function roundNumber(num) {
-    return Math.round(num / 0.05) * 0.05;
+    return Math.ceil(num*20 - 0.05)/20
 }
 
 app.post('/taxcalculator', function (req, res) {
@@ -36,10 +37,9 @@ app.post('/taxcalculator', function (req, res) {
                     sales_tax += roundNumber(basic_tax + imported_tax);
                     element.price += roundNumber(basic_tax + imported_tax);
                 }
-
             }
             total += element.price;
-            Object.assign(obj, { [element.quantity + ' ' + element.item_name + ' at: ']: Number(element.price).toFixed(2), total: Number(total).toFixed(2), sales_tax: sales_tax });
+            Object.assign(obj, { [element.quantity + ' ' + element.item_name + ' at: ']: Number(element.price).toFixed(2), total: Number(total).toFixed(2), sales_tax:Number(sales_tax).toFixed(2)});
         });
     }
     res.send(obj)
